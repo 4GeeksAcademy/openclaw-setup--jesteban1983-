@@ -6,7 +6,7 @@
 - [x] SKILLS_DESIGN.md creado y commiteado antes de skills
 - [x] 2 skills implementadas como archivos formales en .openclaw/skills
 - [x] Evidencia historica de output en servicios conectados (Docs y Calendar)
-- [ ] openclaw doctor en verde en este entorno
+- [x] openclaw doctor ejecutado en este entorno con EXIT_CODE=0
 
 ## Evidencias visuales disponibles
 
@@ -19,16 +19,33 @@
    - workspace/creacionEvento.png
    - workspace/confirmacionCreacionEvento.png
 
-## Bloqueo tecnico actual
+## Validacion tecnica realizada
 
-En este codespace, el comando `openclaw` no esta disponible (command not found), por lo que la validacion de `openclaw doctor` debe ejecutarse en el entorno donde OpenClaw ya esta instalado.
-
-## Comando pendiente a ejecutar
+Se instalo el CLI y se ejecuto:
 
 ```bash
-openclaw doctor
+openclaw doctor --non-interactive --lint
 ```
 
-## Cierre recomendado
+Resultado:
 
-Cuando el comando anterior devuelva cero errores, guardar captura/log y marcar este requisito como completado.
+- EXIT_CODE=0
+- Sin errores bloqueantes
+- Solo advertencias de seguridad sobre secretos en texto plano en configuracion local (`gateway.auth.token`)
+
+## Comando ejecutado (evidencia)
+
+```bash
+openclaw doctor --non-interactive --lint
+```
+
+## Nota de calidad recomendada (no bloqueante)
+
+Para eliminar advertencias de seguridad del doctor:
+
+```bash
+openclaw secrets configure
+openclaw secrets audit --check
+```
+
+Estas advertencias no bloquean la entrega actual del proyecto.
