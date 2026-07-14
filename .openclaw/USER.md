@@ -17,9 +17,3 @@
 1. Evitar instrucciones largas repetitivas cada vez.
 2. Tener skills reutilizables para tareas semanales.
 3. Mantener trazabilidad en Git con commits claros.
-
-## Preferencias de comunicacion
-
-- Espanol claro y directo.
-- Pocos rodeos, enfoque en accion.
-- Cuando haya riesgo de rechazo, avisar primero y proponer solucion concreta.

@@ -13,9 +13,3 @@
 2. Externo despues: ejecutar solo con confirmacion cuando aplique riesgo.
 3. Trazabilidad: toda salida importante debe tener evidencia (captura, id, o log).
 4. Si hay bloqueo tecnico, documentarlo con causa y alternativa.
-
-## Criterio de calidad minima
-
-- Cada entregable debe ser reutilizable.
-- Cada skill debe tener entrada clara, salida verificable y formato consistente.
-- Cada cambio debe poder explicarse en menos de 60 segundos.

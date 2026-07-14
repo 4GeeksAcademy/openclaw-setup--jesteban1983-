@@ -23,27 +23,23 @@
 
 - Carpeta por defecto para entregables: OpenClaw/Entregas.
 - Convencion de nombre: YYYY-MM-DD - Tema - Tipo.
-- Mantener documentos con encabezados claros y accionables.
 
 ### Gmail
 
 - Usar modo borrador por defecto, no envio directo sin confirmacion.
 - Firma por defecto:
 
-	Saludos,
-	Esteban
+  Saludos,
+  Esteban
 
 ### Google Tasks
 
 - Lista por defecto: Prioridad semanal.
-- Cada tarea creada debe incluir contexto breve y siguiente accion.
 
 ### Telegram
 
 - Uso principal: resumenes breves y confirmaciones operativas.
-- Formato: mensaje corto con estado, accion y resultado.
 
 ### GitHub
 
 - Commits pequenos por fase.
-- Mensajes de commit en lenguaje claro y orientados a resultado.
