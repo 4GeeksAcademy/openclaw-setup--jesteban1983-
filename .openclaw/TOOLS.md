@@ -1,45 +1,38 @@
 # TOOLS.md
 
-## Servicios conectados via Composio
+## Composio (servicios conectados)
 
 1. Google Docs
 2. Google Calendar
 3. Gmail
 4. Google Drive
 5. Google Tasks
-6. GitHub
-7. Telegram
+6. Telegram
 
-## Convenciones por herramienta
+## 4Geeks / BreatheCode API
 
-### Google Calendar
+- Base URL: https://breathecode.herokuapp.com/v1/
+- Auth: Token por variable de entorno `FOURGEEKS_API_KEY`
+- Endpoints clave:
+  - /auth/user/me
+  - /assignment/user/me/task
+  - /auth/cohort/
 
-- Calendario por defecto: principal de Esteban.
-- Zona horaria por defecto: America/Santo_Domingo.
-- Duracion por defecto cuando falte: 60 minutos.
-- Recordatorio por defecto: 30 minutos antes.
+## Canales
 
-### Google Docs / Drive
+- Telegram: @AgentJona_bot para confirmaciones cortas y avisos.
+- WebChat: sesiones largas, debugging y planeacion.
 
-- Carpeta por defecto para entregables: OpenClaw/Entregas.
-- Convencion de nombre: YYYY-MM-DD - Tema - Tipo.
+## Defaults operativos
 
-### Gmail
+- Google Calendar: calendario principal.
+- Google Drive: carpeta `OpenClaw/Entregas`.
+- Google Docs reportes: `Progreso 4Geeks - YYYY-MM-DD`.
+- Google Docs diario: `Diario de Aprendizaje - Jonathan`.
+- Firma Gmail: `- Jonathan Esteban`.
 
-- Usar modo borrador por defecto, no envio directo sin confirmacion.
-- Firma por defecto:
+## Reglas de seguridad operacional
 
-  Saludos,
-  Esteban
-
-### Google Tasks
-
-- Lista por defecto: Prioridad semanal.
-
-### Telegram
-
-- Uso principal: resumenes breves y confirmaciones operativas.
-
-### GitHub
-
-- Commits pequenos por fase.
+1. No enviar correos ni mensajes externos sin confirmacion explicita del usuario.
+2. No exponer tokens en logs, commits o respuestas.
+3. Si falta una credencial, responder con bloqueo tecnico y alternativa de solucion.
